@@ -1,5 +1,12 @@
-function sum(a, b) {
-  return a + b;
+function f(n) {
+  let result = "";
+  if (n % 3 === 0) {
+    result += "FIZZ";
+  }
+  if (n % 5 === 0) {
+    result += "BUZZ";
+  }
+  return result !== "" ? result : n;
 }
 
-module.exports = sum;
+module.exports = f;
